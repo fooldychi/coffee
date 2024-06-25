@@ -1,0 +1,236 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(81, 42, 16);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(122, 49, 0);
+}
+
+.btn-outline-primary{
+    color: #512a10;
+    border-color: #512a10;
+}
+
+.btn-primary,.btn-outline-primary:hover{
+    background-color: #512a10;
+    border-color: #512a10;
+}
+
+.btn-primary:hover{
+    background-color: rgb(122, 49, 0);;
+}
+
+/* 导航栏 */
+
+button.navbar-toggler{
+    border: none;
+}
+
+button.navbar-toggler:hover{
+    transform: rotateZ(180deg);
+}
+
+button.navbar-toggler i{
+    color: #fff;
+}
+
+.nav{
+    padding: 1.5rem 0;
+}
+
+.nav-active{
+    background-color: black;
+    padding: 0;
+}
+
+.bi-list{
+    display: none;
+}
+.collapsed .bi-list{
+    display: block;
+}
+.collapsed .bi-x{
+    display: none;
+}
+
+
+
+/* 焦点图模块 */
+.home {
+    background: url("../images/home-bg.jpg") top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home .jumbotron {
+    color: #fff;
+    overflow: hidden;
+    padding: 10rem 0;
+    background-color: transparent;
+}
+
+.home .jumbotron h1 {
+    font-size: 3.6rem;
+}
+
+.home .jumbotron p {
+    font-size: 2rem;
+}
+
+.home .jumbotron .btn {
+    color: #fff;
+    border-color: #fff;
+    margin-top: 4rem;
+}
+
+/* 关于模块 */
+.about {
+    padding: 3rem 0;
+}
+
+.about .icons {
+    background-color: #eee;
+    padding: 0.5rem 0rem;
+}
+
+.about .icons i {
+    font-size: 3.2rem;
+}
+
+/* 菜单模块 */
+.menu {
+    background-color: #eee;
+}
+
+.menu .page-header,
+.gallery .page-header {
+    padding: 2rem 0;
+}
+
+.menu .card {
+    background-color: transparent;
+    padding: 3rem 2rem;
+    border: none;
+}
+
+.menu .card img {
+    width: 10rem;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.menu .card:hover {
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-1rem);
+}
+
+/* 相册模块 */
+#gallery .card {
+    position: relative;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    border: none;
+    height: 15rem;
+    overflow: hidden;
+}
+
+#gallery .card img {
+    height: 100%;
+}
+
+#gallery .card:hover img {
+    transform: translateY(-100%);
+}
+
+#gallery .card .card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0.1rem solid #512a10;
+    text-align: center;
+    line-height: 1.8rem;
+    padding: 2rem 1.5rem;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+}
+
+#gallery .card:hover .card-body {
+    transform: translateY(0);
+}
+
+/* 订阅模块 */
+.newsletter {
+    background-image: url("../images/newsletter-bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 2rem 0 1.5rem;
+}
+
+.newsletter h3 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.newsletter .input-group-btn {
+    background-color: #fff;
+}
+
+.newsletter .form-control,
+.newsletter .btn {
+    height: 4rem;
+}
+
+/* 页脚模块 */
+footer{
+    padding: 2rem 0 4rem 0;
+}
+footer .icons i.fa{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border: 0.1rem solid #512a10;
+    /* font-size: 2rem; */
+    color: #512a10;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(81, 42, 16);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(122, 49, 0);
+}
