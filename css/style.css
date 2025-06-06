@@ -1,0 +1,255 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  transition: all 1s linear;
+}
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+
+/* 1rem = 16px
+10rem = 160px */
+@media (max-width: 991px) {
+  html{
+    font-size: 100%;
+  }
+}
+
+/* 1rem = 16px * 0.8
+10rem = 128px */
+@media (max-width: 768px) {
+  html{
+    font-size: 80%;
+  }
+}
+
+/* 1rem = 16px * 0.625
+10rem = 100px */
+@media (max-width: 576px) {
+  html{
+    font-size: 62.5%;
+  }
+  .cup{
+    display: none;
+  }
+}
+
+/* 导航模块 */
+nav.navbar button,nav.navbar button:focus{
+  border: none;
+  box-shadow: none;
+  background:transparent;
+}
+nav.navbar{
+    padding: 2rem 0;
+}
+nav.active {
+    padding:1rem 0;
+    background-color:var(--bs-body-bg);
+}
+
+nav.active a,nav.active .theme i,nav.active i{
+    /* color: #fff; */
+    color: var(--bs-secondary-color);
+}
+
+.collapsed .bi-list,.bi-x{
+  display: block;
+}
+
+.collapsed .bi-x,.bi-list{
+  display: none;
+}
+
+/* 换肤 */
+.dark .bi-sun-fill,.light .bi-moon-fill{
+  display: block;
+}
+.dark .bi-moon-fill,.light .bi-sun-fill{
+  display: none;
+}
+.dark .home{
+  background-image: url("../images/home-bg-dark.jpg");
+  background-position: 0 -100px;
+}
+.light .home{
+  background-image:url("../images/home-bg-light.jpg");
+  background-position: -100px 0;
+}
+
+.bi-x:hover{
+  transform: rotateZ(360deg);
+}
+
+
+
+/* home模块 */
+.home {
+  background-image: url("../images/home-bg-dark.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home .jumbotron {
+  overflow: hidden;
+  padding: 10rem 0;
+}
+
+.home .jumbotron h1 {
+  font-size: 3.6rem;
+}
+
+.home .jumbotron p {
+  font-size: 2rem;
+}
+
+.home .jumbotron .btn {
+  margin-top: 4rem;
+}
+
+.about .content {
+  padding: 3rem 0;
+}
+
+.about .content p {
+  line-height: 1.5rem;
+}
+
+.about .content .icons {
+  background-color: rgb(var(--bs-secondary-bg-rgb));
+  padding: 0 0 0.5rem;
+}
+
+.about .icons i {
+  font-size: 2rem;
+}
+
+.page-header {
+  text-align: center;
+  padding:40px 0px 20px;
+}
+
+.about,.menu,.gallery,.contact.reviews{
+  border-bottom: 1px solid var(--bs-secondary-bg);
+}
+
+/* 群组选择器 */
+.menu .card,.reviews .card{
+  padding: 3rem 2rem;
+  border: none;
+}
+.menu .card img,.reviews .card img{
+  width: 10rem;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.menu .card:hover,.reviews .card:hover{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-1rem);
+}
+/* 指定选择器 */
+.navbar i.bi-cup-hot-fill{
+  color: rgb(223, 159, 22);
+}
+
+.gallery .card{
+  position: relative;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  border: none;
+  height: 15rem;
+  border-radius:0;
+  overflow: hidden;
+}
+.gallery .card img{
+  height: 100%;
+}
+.gallery p{
+  margin-bottom: 2.5rem;
+}
+.gallery .card:hover img{
+  transform: translateY(-100%);
+}
+.gallery .card .card-body{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height:1.8rem;
+  padding: 2rem 1.5rem;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+}
+.gallery .card:hover .card-body{
+  transform: translateY(0);
+}
+.contact{
+  margin: 0 0 4rem;
+}
+.contact .icons{
+  border:0.1rem solid rgb(var(--bs-secondary-bg-rgb));
+  padding: 4rem 2rem 3rem;
+}
+.contact .icons i{
+font-size: 3rem;
+}
+.contact .info{
+  margin-bottom:4rem;
+}
+.contact h3{
+  margin-top:0;
+}
+.contact iframe{
+  height: 20rem;
+}
+.contact .form-control{
+  height:auto;
+}
+
+.newsletter{
+  background-image: url("../images/newsletter-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0 4rem 0;
+}
+.newsletter h3{
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.newsletter .form-control,.newsletter .btn{
+  height: 4rem;
+}
+.newsletter .sendbox{
+  padding: 0;
+  position: relative;
+}
+.newsletter .sendbox button{
+  position: absolute;
+  width: 6rem;
+  top: 0;
+  right: 0rem;
+}
+
+footer{
+  padding: 2rem 0 4rem 0;
+}
+footer .icons i.bi{
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  border: 0.1rem solid rgb(var(--bs-secondary-color));
+  color: rgb(var(--bs-secondary-color));
+}
